@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
 const Login = ({ onLogin }) => {
-  const [shox, setUsername] = useState('');
-  const [shax, setPassword] = useState('');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (shox === 'geniy' && shax === '1234') {
+    if (username === 'geniy' && password === '1234') {
       onLogin();
     } else {
       alert('логин или пароль неправильный!');
@@ -20,13 +20,13 @@ const Login = ({ onLogin }) => {
         <input
           type="text"
           placeholder="login"
-          value={shox}
+          value={username}
           onChange={e => setUsername(e.target.value)}
         />
         <input
           type="password"
           placeholder="Password"
-          value={shax}
+          value={password}
           onChange={e => setPassword(e.target.value)}
         />
         <button type="submit">Log In</button>

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Login from './login';
-import Dashboard from './dashboard';
-import ProductDetail from './productDetail';
+import Login from './pages/login/login';
+import Dashboard from './pages/dashboard/dashboard';
+import ProductDetail from './pages/productDetail/productDetail';
 import './App.css';
 
 function App() {
